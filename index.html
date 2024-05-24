@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="LearnWeb3 Dennys' Wambs">
+    <meta name="keywords"
+        content="HTML, CSS, JavaScript, Web3, Blockchain, Ethereum, Solidity, Smart Contracts, DApps, Sepolia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnWeb3 Dennys' Wambs</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- script js -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <h1>This is my dApp! Yoow 🤖 </h1>
+        <P>Here we can set or get the mood:👻</P>
+        <label for="mood">Input Mood:</label><br />
+        <input type="text" id="mood" />
+        <button onClick="getMood()">Get Mood</button>
+        <button onClick="setMood()">Set Mood</button>
+        <p id="moodDisplay"></p>
+    </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js" type="application/javascript"></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
+
+<!-- the mood.sol  script in RemixIDE -->
+<!-- // SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+ 
+contract MoodDiary{
+    string mood;
+
+    function setMood(string memory _mood) public{
+        mood =_mood;
+
+    }
+    function getMood() public view returns(string memory){
+        return mood;
+    }
+} -->
